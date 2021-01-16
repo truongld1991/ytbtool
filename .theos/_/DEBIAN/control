@@ -1,0 +1,9 @@
+Package: com.fivestar.ytbtool
+Name: YTBTool
+Architecture: iphoneos-arm
+Description: An awesome application!
+Maintainer: Mr.Truong
+Author: Mr.Truong
+Section: Utilities
+Version: 0.0.1-1+debug
+Installed-Size: 148
