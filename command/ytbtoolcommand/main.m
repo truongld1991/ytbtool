@@ -10,11 +10,8 @@ int main(int argc, char *argv[], char *envp[]) {
 			if (argc > 2) {
 				appName = [NSString stringWithUTF8String:argv[2]];
 				if([command isEqualToString:@"CloseApp"]) {
-						printf("Close AppName: %s\n", appName);
-						NSlog(@"Close AppName: %s\n", appName);
-					}
-				else if([day isEqualToString:@"Sun"]) {
-						NSlog(@"Somthing...");
+						
+printf("%s\n", [appName UTF8String]);
 					}
 			} else {
 				printf("%s\n", [command UTF8String]);
