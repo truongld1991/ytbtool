@@ -10,9 +10,11 @@ int main(int argc, char *argv[], char *envp[]) {
 			if (argc > 2) {
 				appName = [NSString stringWithUTF8String:argv[2]];
 				if([command isEqualToString:@"CloseApp"]) {
-						
-printf("%s\n", [appName UTF8String]);
-					}
+					printf("%s\n", [appName UTF8String]);
+					SBApplication *frontApp = [(SpringBoard*)[UIApplication sharedApplication] _accessibilityFrontMostApplication];
+					NSString *currentAppDisplayID = [frontApp displayIdentifier];
+					printf("%s\n", [currentAppDisplayID UTF8String]);
+				}
 			} else {
 				printf("%s\n", [command UTF8String]);
 			}
