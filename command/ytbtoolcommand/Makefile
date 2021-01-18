@@ -5,6 +5,7 @@ include $(THEOS)/makefiles/common.mk
 TOOL_NAME = YTBToolCommand
 
 YTBToolCommand_FILES = main.m
+YTBToolCommand_FRAMEWORKS = Foundation
 YTBToolCommand_CFLAGS = -fobjc-arc
 YTBToolCommand_CODESIGN_FLAGS = -Sentitlements.plist
 YTBToolCommand_INSTALL_PATH = /usr/local/bin
